@@ -31,11 +31,13 @@ function verificar() {
         /*window.location.href = window.location;*/
         res.innerHTML = certo;
         res.style.backgroundColor = "green";
+        res.style.transition = "2s ease"
         res.style.animation = "acertou 2s alternate";
         res.style.color = "#fff";
     } else {
         res.innerHTML = errado;
         res.style.animation = "errou 2s alternate";
+        res.style.transition = "2s ease"
         res.style.backgroundColor = "red";
         res.style.color = "#fff";
         window.location.href = window.location;
@@ -57,7 +59,6 @@ function actualizar() {
         update.style.animation = "errou 2s alternate";
         window.location.href = window.location;
     } else {
-        n1.style.backgroundColor = "green";
         window.location.href = window.location;
     }
 }
