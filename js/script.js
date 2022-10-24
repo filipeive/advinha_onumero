@@ -32,12 +32,12 @@ function verificar() {
         return verificar()
     } else {
         if (n1 == n2) {
-            /*window.location.href = window.location;*/
             res.innerHTML = certo;
             res.style.backgroundColor = "green";
             res.style.transition = "2s ease"
             res.style.animation = "acertou 2s alternate";
             res.style.color = "#fff";
+            /*window.location.href = window.location;*/
         } else {
             res.innerHTML = errado;
             res.style.animation = "errou 2s alternate";
