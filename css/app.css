@@ -25,6 +25,52 @@
     }
 }
 
+@keyframes errou {
+    0% {
+        background-color: red;
+        color: #fff;
+    }
+    25% {
+        background-color: #fff;
+        color: red;
+    }
+    50% {
+        background-color: red;
+        color: #fff;
+    }
+    75% {
+        background-color: #fff;
+        color: red;
+    }
+    100% {
+        background-color: red;
+        color: #fff;
+    }
+}
+
+@keyframes acertou {
+    0% {
+        background-color: rgb(102, 255, 0);
+        color: #fff;
+    }
+    25% {
+        background-color: #fff;
+        color: rgb(102, 255, 0);
+    }
+    50% {
+        background-color: rgb(102, 255, 0);
+        color: #fff;
+    }
+    75% {
+        background-color: #fff;
+        color: rgb(102, 255, 0);
+    }
+    100% {
+        background-color: rgb(102, 255, 0);
+        color: #fff;
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -35,21 +81,31 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+    display: flex;
+    margin-top: 50px;
+}
+
 .menu {
     margin-left: 30px;
     margin-top: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .desc {
     position: absolute;
-    left: 80px;
+    top: 60px;
+    left: 40px;
     width: 80px;
     height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #3700ff;
+    color: rgb(0, 102, 255);
     margin-top: 15px;
+    flex-direction: column;
 }
 
 .menu .menu_faketrigger {
@@ -74,13 +130,13 @@ body {
     width: 35px;
     height: 5px;
     margin-bottom: 10px;
-    background-color: #3700ff;
+    background-color: rgb(0, 102, 255);
     border-radius: 3px;
     transition: all 0.25s linear;
 }
 
 .menu .menu_faketrigger:checked~.menu_lines span {
-    background-color: blue;
+    background-color: rgb(0, 102, 255);
 }
 
 .menu .menu_faketrigger:checked~.desc {
@@ -142,30 +198,7 @@ body {
 
 .menu ul li a:hover {
     color: rgb(255, 255, 255);
-    background-color: blue;
-}
-
-@keyframes errou {
-    0% {
-        background-color: red;
-        color: #fff;
-    }
-    25% {
-        background-color: #fff;
-        color: red;
-    }
-    50% {
-        background-color: red;
-        color: #fff;
-    }
-    75% {
-        background-color: #fff;
-        color: red;
-    }
-    100% {
-        background-color: red;
-        color: #fff;
-    }
+    background-color: rgb(0, 102, 255);
 }
 
 main {
@@ -196,20 +229,20 @@ main {
     height: 60px;
     padding: 10px;
     border-radius: 10px;
-    background-color: #eee;
     text-align: center;
+    color: blue;
 }
 
 #n1 {
     border-radius: 5px;
     width: 200px;
     height: 200px;
-    border: 1px solid #000;
     margin-right: 10px;
     font-size: 100px;
     text-align: center;
     line-height: 200px;
-    background-color: #eee;
+    color: #fff;
+    background-color: rgb(255, 187, 0);
 }
 
 #n2 {
@@ -220,6 +253,7 @@ main {
     font-size: 100px;
     text-align: center;
     line-height: 200px;
+    border-color: rgb(255, 187, 0);
 }
 
 .verificar {
@@ -232,9 +266,10 @@ main {
 .butoes {
     display: flex;
     gap: 10px;
-    justify-content: space-around;
-    width: 440px;
+    justify-content: center;
+    width: 430px;
     height: 50px;
+    margin-left: -15px;
 }
 
 .butoes button {
@@ -249,6 +284,19 @@ main {
 }
 
 #actualizar {
-    background-color: rebeccapurple;
+    background-color: rgb(255, 0, 0);
     color: #fff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: rgb(0, 102, 255);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

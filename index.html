@@ -11,37 +11,40 @@
 </head>
 
 <body onload="resetar()">
-    <nav class="menu">
-        <input type="checkbox" class="menu_faketrigger">
-        <div class="menu_lines">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="desc">
-            <h1>MENU</h1>
-        </div>
-        <ul>
-            <li>
-                <a href="">Home</a>
-            </li>
-            <li>
-                <a href="">About</a>
-            </li>
-            <li>
-                <a href="">Settings</a>
-            </li>
-            <li>
-                <a href="">Exit</a>
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="menu">
+            <input type="checkbox" class="menu_faketrigger">
+            <div class="menu_lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="desc">
+                <h1>MENU</h1><br>
+                <img src="bg.png" alt="" width="150">
+            </div>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Settings</a>
+                </li>
+                <li>
+                    <a href="">Exit</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <div class="container">
-            <h1 id="resultado">Adivinhe o Numero!</h1>
+            <h1 id="resultado"> Adivinhe o Numero!</h1>
             <div class="inputs">
                 <div id="n1">0</div>
-                <input type="text" id="n2">
+                <input type="text" id="n2" placeholder="?" required>
                 <div style="clear: both;"></div>
             </div>
         </div>
@@ -50,6 +53,9 @@
             <button onclick="actualizar()" id="actualizar">Tentar Novamente</button>
         </div>
     </main>
+    <footer>
+        <p>&COPY; Criado Por: Filipe dos Santos</p>
+    </footer>
 </body>
 
 </html>
