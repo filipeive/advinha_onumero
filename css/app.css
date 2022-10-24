@@ -96,8 +96,8 @@ header {
 
 .desc {
     position: absolute;
-    top: 60px;
-    left: 40px;
+    top: 25px;
+    left: 80px;
     width: 80px;
     height: 35px;
     display: flex;
@@ -106,6 +106,12 @@ header {
     color: rgb(0, 102, 255);
     margin-top: 15px;
     flex-direction: column;
+}
+
+.desc span {
+    width: 150px;
+    text-align: center;
+    display: block;
 }
 
 .menu .menu_faketrigger {
