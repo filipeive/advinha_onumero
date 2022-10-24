@@ -27,20 +27,25 @@ function verificar() {
     var res = document.getElementById("resultado");
     var certo = "Voce Acertou!";
     var errado = "Voce Errou!";
-    if (n1 == n2) {
-        /*window.location.href = window.location;*/
-        res.innerHTML = certo;
-        res.style.backgroundColor = "green";
-        res.style.transition = "2s ease"
-        res.style.animation = "acertou 2s alternate";
-        res.style.color = "#fff";
+    if (n2.value == "") {
+        alert("digite o numero!");
+        return verificar()
     } else {
-        res.innerHTML = errado;
-        res.style.animation = "errou 2s alternate";
-        res.style.transition = "2s ease"
-        res.style.backgroundColor = "red";
-        res.style.color = "#fff";
-        window.location.href = window.location;
+        if (n1 == n2) {
+            /*window.location.href = window.location;*/
+            res.innerHTML = certo;
+            res.style.backgroundColor = "green";
+            res.style.transition = "2s ease"
+            res.style.animation = "acertou 2s alternate";
+            res.style.color = "#fff";
+        } else {
+            res.innerHTML = errado;
+            res.style.animation = "errou 2s alternate";
+            res.style.transition = "2s ease"
+            res.style.backgroundColor = "red";
+            res.style.color = "#fff";
+            window.location.href = window.location;
+        }
     }
 }
 resetar();
