@@ -29,7 +29,7 @@ switch (x) {
 
 function verificar() {
     var n1 = document.getElementById("n1").innerHTML;
-    var n2 = parseInt(document.getElementById("n2").value);
+    var n2 = document.getElementById("n2").value;
     var res = document.getElementById("resultado");
     var certo = "Voce Acertou!";
     var errado = "Voce Errou!";
@@ -63,13 +63,5 @@ function resetar() {
 }
 
 function actualizar() {
-    var n1 = document.getElementById("n1").innerHTML;
-    var n2 = document.getElementById("n2").value;
-    update = document.getElementById("actualizar");
-    if (n1 != n2) {
-        update.style.animation = "errou 2s alternate";
-        window.location.href = window.location;
-    } else {
-        window.location.href = window.location;
-    }
+    resetar();
 }
