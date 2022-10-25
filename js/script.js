@@ -26,6 +26,16 @@ switch (x) {
     var appmenu = document.getElementById("appmenu");
     appmenu.style.marginLeft = "-300px";
 }*/
+function validar() {
+    var n1 = document.getElementById("n1").innerHTML;
+    var n2 = document.getElementById("n2").value;
+    if (n2 == "") {
+        alert("O campo esta vazio!")
+    } else {
+        confirm("Tem certeza?");
+    }
+
+}
 
 function verificar() {
     var n1 = document.getElementById("n1").innerHTML;
@@ -33,7 +43,7 @@ function verificar() {
     var res = document.getElementById("resultado");
     var certo = "Voce Acertou!";
     var errado = "Voce Errou!";
-    if (n2.value == "") {
+    if (n2.value == false) {
         alert("digite o numero!");
         return verificar()
     } else {
@@ -50,7 +60,6 @@ function verificar() {
             res.style.transition = "2s ease"
             res.style.backgroundColor = "red";
             res.style.color = "#fff";
-            window.location.href = window.location;
         }
     }
 }
