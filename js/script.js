@@ -21,9 +21,15 @@ switch (x) {
         alert("Ninguem foi satisfeto");
         break;
 }*/
+
+/*function fechar() {
+    var appmenu = document.getElementById("appmenu");
+    appmenu.style.marginLeft = "-300px";
+}*/
+
 function verificar() {
     var n1 = document.getElementById("n1").innerHTML;
-    var n2 = document.getElementById("n2").value;
+    var n2 = parseInt(document.getElementById("n2").value);
     var res = document.getElementById("resultado");
     var certo = "Voce Acertou!";
     var errado = "Voce Errou!";
